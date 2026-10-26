@@ -1,29 +1,29 @@
 {
-  "versionCode": 8,
-  "versionName": "0.2.5",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.2.5/car-launcher-0.2.5-system-universal-PLATFORM-KEY.apk",
-  "sha256": "0104314193aa6eec687ea15dca3db8d139a0995505f49fd1779e977583374576",
-  "changelog": "Bản 0.2.5 thêm tính năng chính của bản gốc: hai ứng dụng chạy song song trên cùng màn hình. Mỗi ô là một màn hình ảo riêng, ứng dụng được mở vào đúng màn hình đó; thanh điều khiển nằm ngoài vùng ứng dụng nên bấm được, và danh sách chọn ứng dụng hiện ngay trong ô nên dùng được cả khi head unit nằm ngang. Chạm và vuốt trong ô đã được chuyển tiếp vào ứng dụng bên trong (đo được: cuộn danh sách Settings làm đổi 30,7% số điểm ảnh, đối chứng không chạm là 0%). Thanh dọc bên trái có đồng hồ, ngày, trạng thái WiFi, năm ứng dụng tắt nhanh, nút đổi giữa dạng chia đôi và danh sách ứng dụng, cùng hai nút Ứng dụng và Cài đặt ở đáy. Phần ổn định trên Android 13 gồm: chặn phím BACK thoát khỏi launcher, tự làm mới danh sách ứng dụng khi quay lại, cache icon để mở nhanh, splash không nháy, và xin quyền ứng dụng HOME. Ba lỗi đã sửa trong bản này: bảng chọn ứng dụng bị che ở dạng ngang khiến không gán được ứng dụng (nay chọn ngay trong ô); ứng dụng im lặng không mở vì host trả lỗi khi mặt hiển thị chưa kịp có kích thước, kèm thông báo sai là thiếu quyền (nay host nhận yêu cầu rồi mở khi sẵn sàng); và việc dựng lại ô khi xoay màn hình hoặc đổi ứng dụng làm rách bố cục (nay dựng lại mặt hiển thị đúng cách và dọn sạch cửa sổ cũ). Còn ba điều đã biết trước: một hình chữ nhật nhỏ chứa ảnh thu nhỏ của cửa sổ xuất hiện trong ô sau khi ô bị dựng lại (đã loại trừ năm nguyên nhân phía launcher, còn lại thuộc phía hệ thống và chưa sửa); thao tác hai ngón (pinch/zoom) đã gửi đủ dữ liệu nhưng chưa kiểm chứng được vì emulator không tạo được hai ngón; và những ứng dụng tự mở tác vụ mới có thể thoát khỏi ô ra màn hình chính. Bản cài: bản system universal ký bằng khoá platform AOSP, cài đè lên bản gốc được trên máy chạy test-keys.",
+  "versionCode": 9,
+  "versionName": "0.3.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.3.0/car-launcher-0.3.0-system-universal-PLATFORM-KEY.apk",
+  "sha256": "c7ffbc27471a9f1c6ecb8e0642a6e660c38c5f810ecddd77a4d08b049c683a9f",
+  "changelog": "Bản 0.3.0 đổi toàn bộ giao diện sang phong cách Dark Glass: nền là ảnh đã làm mờ sẵn nên không tốn GPU mỗi khung hình, còn thanh bên, tiêu đề ô, thanh media, bảng nổi, ô ứng dụng và màn hình Cài đặt đều là kính tối bán trong suốt có viền sáng và bóng mềm. Ô trống nay không còn chữ kỹ thuật \"Pane N\" mà hiện nút cộng lớn \"Chọn ứng dụng\", và quan trọng hơn là không tạo màn hình ảo cho tới khi thực sự có ứng dụng. Thanh điều khiển mỗi ô có icon ứng dụng, nút Đổi, nút Đóng ô và nút mở lại. Ở màn hình dựng đứng hai ô xếp trên dưới với thanh bên hẹp 84 dp, còn màn hình ngang giữ hai ô cạnh nhau. Có thêm thanh media hiện khi có ứng dụng đang phát, với nút bài trước, phát hoặc tạm dừng và bài tiếp, tự ẩn khi không có nhạc. Người dùng có thể nhấn giữ một ứng dụng để ghim lên thanh bên, và chế độ chia đôi, ứng dụng trong ô, ứng dụng ghim cùng danh sách gần đây đều được lưu lại nên mở lại launcher vẫn còn nguyên. Màn hình Cài đặt gộp phần quyền hệ thống thành mục \"Quyền đã được cấp\" để gọn hơn, thêm công tắc bật tắt hiệu ứng kính cho máy yếu, và sửa lại phụ đề sai của mục khởi động lại. Màu chữ được kiểm tự động đạt độ tương phản tối thiểu 4.5 trên 1 trên mọi bề mặt kính. Ba điều vẫn còn: một hình thu nhỏ của cửa sổ đôi khi hiện trong ô sau khi ô bị dựng lại, thao tác hai ngón chưa kiểm chứng được trên emulator, và những ứng dụng tự mở tác vụ mới có thể thoát khỏi ô ra màn hình chính. Bản cài dành cho head unit là bản system universal ký bằng khoá platform AOSP.",
   "abiApks": {
     "arm64-v8a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.2.5/car-launcher-0.2.5-normal-arm64-v8a.apk",
-      "sha256": "1da4347837380b10024815e29ea75ba014f3eb53eb8954e60985ba0223dcdd69",
-      "size": 37689995
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.3.0/car-launcher-0.3.0-normal-arm64-v8a.apk",
+      "sha256": "796b7b7df4a923388981ace6b815aa8e7510fa3307ec2a3b71ed91909c498819",
+      "size": 37698505
     },
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.2.5/car-launcher-0.2.5-normal-armeabi-v7a.apk",
-      "sha256": "1d0328a7d2269ec87b9e933ced7b48432d345877a9f34a13dde24d4d5aa6f6f3",
-      "size": 34981153
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.3.0/car-launcher-0.3.0-normal-armeabi-v7a.apk",
+      "sha256": "d39b15bc2b2259ba758fbc91b79c346c05f47ee92c645c5d9973fd4b23ac32eb",
+      "size": 35055199
     },
     "x86_64": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.2.5/car-launcher-0.2.5-normal-x86_64.apk",
-      "sha256": "f48c2e033311576ce12a80ea3a1a1d51f15cd29e6c252ed947e97e1f5c888349",
-      "size": 38861074
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.3.0/car-launcher-0.3.0-normal-x86_64.apk",
+      "sha256": "65c1582f010830eace9046c1a6a19fd31dacb36f2fd3dd02ef5b4a83640c8bff",
+      "size": 38869584
     },
     "universal": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.2.5/car-launcher-0.2.5-normal-universal.apk",
-      "sha256": "25689e65b9ba14bc85de3eaf70f9abfbc289ba14184ea5522fa63433ac1ccbf9",
-      "size": 69548860
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.3.0/car-launcher-0.3.0-normal-universal.apk",
+      "sha256": "891bca6903a87753602d2ca823733bbc86620a1dcb17c073597a3689feccb1df",
+      "size": 69622906
     }
   },
   "package": "com.haison.carlauncher",
