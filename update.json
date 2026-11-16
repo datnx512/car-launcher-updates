@@ -1,29 +1,29 @@
 {
-  "versionCode": 11,
-  "versionName": "0.4.0",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.0/car-launcher-0.4.0-system-universal-PLATFORM-KEY.apk",
-  "sha256": "8af46d8180b26ee5abd42deb8274b593f44fb12076d6f36b96e84158d345072f",
-  "changelog": "Ô app không còn dựng lại app khi mở hoặc đổi ứng dụng: giữ nguyên VirtualDisplay, chỉ ẩn/hiện Surface, nên app giữ nguyên pid và trạng thái (hộp thoại, vị trí cuộn, bài đang mở). App tự cập nhật: đọc update.json, tải APK, kiểm SHA-256 rồi cài qua PackageInstaller; tự kiểm tra mỗi 24 giờ, chỉ tải khi bạn bấm. Bố cục không còn co giãn khi bàn phím hoặc thanh trạng thái xuất hiện. Sửa lỗi tiềm ẩn: mọi thông báo SnackBar trong launcher trước đây sẽ làm app crash vì thiếu Scaffold. Giảm một vòng gọi host mỗi lần mở app.",
+  "versionCode": 12,
+  "versionName": "0.4.1",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.1/car-launcher-0.4.1-system-universal-PLATFORM-KEY.apk",
+  "sha256": "926681f06dd71c9868f25075fe11dd7a2fd82b76d8afb24cd660f10cf9141897",
+  "changelog": "0.4.1 — Lớp phủ nằm trên ô, cử chỉ không còn chết Sửa 3 lỗi của 0.4.0: 1. Sheet / hộp thoại / SnackBar không còn bị app trong ô che. Mọi lớp phủ đi qua withPanesHidden(): tạm ẩn các ô (Offstage + setPaneHidden), mở lớp phủ, rồi hiện lại. App trong ô không bị dựng lại (pid không đổi). 2. Cử chỉ vuốt lên không còn chết sau lần đầu mở bảng chọn. Bỏ gesture arena của PlatformViewSurface (nguồn lỗi LateInitializationError: pointTransformer), thay bằng Listener ở tầng Flutter; chạm vẫn được chuyển xuống app bằng injectPaneTouch. Vuốt mở bảng chọn dùng được nhiều lần liên tiếp. 3. Bỏ app khỏi ô rồi chọn app mới không còn báo lỗi sai \"cần flavor system\". View id được xoá và publish lại khi bỏ app; app mới mở trên ô mới. Nội bộ: 75 test Dart, 5 test contract Kotlin, flutter analyze sạch.",
   "abiApks": {
     "arm64-v8a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.0/car-launcher-0.4.0-normal-arm64-v8a.apk",
-      "sha256": "21ad371c87f10f3182102625697f2ced3251bf72d354032833cd592ec0b38551",
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.1/car-launcher-0.4.1-normal-arm64-v8a.apk",
+      "sha256": "63cdb840467ca86efb3a96dda0e139e75aecef68d80f055984d48ca43353a265",
       "size": 38108269
     },
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.0/car-launcher-0.4.0-normal-armeabi-v7a.apk",
-      "sha256": "8b9fd99164ee13f99eb4c1a06a5c0506053bc9d12a8f20a9e303fd1b049c367d",
-      "size": 35464963
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.1/car-launcher-0.4.1-normal-armeabi-v7a.apk",
+      "sha256": "3e0a6a5ed51e4d225c73ecfac1c262d823d67c07214d5c5960c3228cc9a22f02",
+      "size": 35481347
     },
     "x86_64": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.0/car-launcher-0.4.0-normal-x86_64.apk",
-      "sha256": "3b067a6a1244917a80f08a1b8582385625a67e97f2288e44e2e44b1f701677f7",
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.1/car-launcher-0.4.1-normal-x86_64.apk",
+      "sha256": "3701132bbb92fb4670f9062170662efb4daadab138f64358c21ee91922022923",
       "size": 39279348
     },
     "universal": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.0/car-launcher-0.4.0-normal-universal.apk",
-      "sha256": "7d245a3cbd558c838e6fb4bfbab69382bd61a1550c94a7968e8589a33c75cfaf",
-      "size": 70819102
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.1/car-launcher-0.4.1-normal-universal.apk",
+      "sha256": "d30d7c9f364ed7e0c77e0c0c61498ed21ac6a1a0f5976470b2a43fd2ed737546",
+      "size": 70835486
     }
   },
   "package": "com.haison.carlauncher",
