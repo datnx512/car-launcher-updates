@@ -1,29 +1,29 @@
 {
-  "versionCode": 10,
-  "versionName": "0.3.1",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.3.1/car-launcher-0.3.1-system-universal-PLATFORM-KEY.apk",
-  "sha256": "458f1a474bcf365e5633a237abb4f948a4330747ab75d7923d8a327c1e6117df",
-  "changelog": "Bản 0.3.1 làm gọn màn hình chính: bỏ thanh điều khiển của từng ô và bỏ dải tiêu đề phía trên, nên mỗi ứng dụng được trọn diện tích của ô. Việc chọn, đổi hoặc bỏ ứng dụng trong ô nay thực hiện bằng cách vuốt lên từ đáy ô; một vạch nhỏ ở đáy giữa mỗi ô nhắc người dùng cử chỉ này. Bảng chọn ứng dụng mở ngay bên trong ô với ô tìm kiếm, dòng bỏ ứng dụng khỏi ô và nút huỷ, nên không bị chính ứng dụng che mất. Cử chỉ chỉ được nhận khi bắt đầu trong vùng sát đáy, kéo lên đủ xa, đủ nhanh và theo chiều dọc, để các thao tác bình thường của ứng dụng như kéo thanh tua hay bấm nút ở đáy không bị cướp. Đặt launcher làm mặc định vẫn nằm trong mục Cài đặt. Trạng thái vẫn được lưu: mở lại launcher sẽ tự khôi phục đúng hai ứng dụng đang dùng trong hai ô. Bản cài cho head unit là bản system universal ký bằng khoá platform AOSP.",
+  "versionCode": 11,
+  "versionName": "0.4.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.0/car-launcher-0.4.0-system-universal-PLATFORM-KEY.apk",
+  "sha256": "8af46d8180b26ee5abd42deb8274b593f44fb12076d6f36b96e84158d345072f",
+  "changelog": "Ô app không còn dựng lại app khi mở hoặc đổi ứng dụng: giữ nguyên VirtualDisplay, chỉ ẩn/hiện Surface, nên app giữ nguyên pid và trạng thái (hộp thoại, vị trí cuộn, bài đang mở). App tự cập nhật: đọc update.json, tải APK, kiểm SHA-256 rồi cài qua PackageInstaller; tự kiểm tra mỗi 24 giờ, chỉ tải khi bạn bấm. Bố cục không còn co giãn khi bàn phím hoặc thanh trạng thái xuất hiện. Sửa lỗi tiềm ẩn: mọi thông báo SnackBar trong launcher trước đây sẽ làm app crash vì thiếu Scaffold. Giảm một vòng gọi host mỗi lần mở app.",
   "abiApks": {
     "arm64-v8a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.3.1/car-launcher-0.3.1-normal-arm64-v8a.apk",
-      "sha256": "338a65525bba09abe22bdb2c1984d2a535c0f41f9f2cf49d74ba275f9dab0ffb",
-      "size": 37698457
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.0/car-launcher-0.4.0-normal-arm64-v8a.apk",
+      "sha256": "21ad371c87f10f3182102625697f2ced3251bf72d354032833cd592ec0b38551",
+      "size": 38108269
     },
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.3.1/car-launcher-0.3.1-normal-armeabi-v7a.apk",
-      "sha256": "4dae8f526fe4f872953d44bb0c77ecfa6f494d96498e76b2d13bea72d17eac1a",
-      "size": 35055151
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.0/car-launcher-0.4.0-normal-armeabi-v7a.apk",
+      "sha256": "8b9fd99164ee13f99eb4c1a06a5c0506053bc9d12a8f20a9e303fd1b049c367d",
+      "size": 35464963
     },
     "x86_64": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.3.1/car-launcher-0.3.1-normal-x86_64.apk",
-      "sha256": "5d3a6e3fd172c9f3b53e543e4f95599b4567c8e4e4f82c6cbe1fabf16757bb58",
-      "size": 38869536
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.0/car-launcher-0.4.0-normal-x86_64.apk",
+      "sha256": "3b067a6a1244917a80f08a1b8582385625a67e97f2288e44e2e44b1f701677f7",
+      "size": 39279348
     },
     "universal": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.3.1/car-launcher-0.3.1-normal-universal.apk",
-      "sha256": "acef0e23ebc2ec70b1ff3cbd9c23d4cba1dcd3837cb7ab932c31e90401a1aab7",
-      "size": 69622858
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.0/car-launcher-0.4.0-normal-universal.apk",
+      "sha256": "7d245a3cbd558c838e6fb4bfbab69382bd61a1550c94a7968e8589a33c75cfaf",
+      "size": 70819102
     }
   },
   "package": "com.haison.carlauncher",
