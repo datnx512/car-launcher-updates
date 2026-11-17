@@ -1,31 +1,10 @@
 {
-  "versionCode": 14,
-  "versionName": "0.6.0",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.6.0/car-launcher-0.6.0-system-universal-PLATFORM-KEY.apk",
-  "sha256": "19923498476558aedce925972823d7625bc8cefe771a6c6a1b8f8357669a7da2",
-  "changelog": "0.6.0: app đã chọn cho một ô thì luôn nằm trong ô đó (đo 12/12 ứng dụng, kể cả Files từng tự mở toàn màn hình); giao diện có 4 màu nhấn, 3 hình nền, số shortcut rail 3-7, khung xương khi đang tải và vùng chạm đủ lớn cho người lái xe; THÊM TRỢ LÝ AI bật trong Cài đặt (mặc định tắt): nói hoặc gõ để mở app vào ô, bật tắt wifi, chỉnh độ sáng và âm lượng, phát nhạc, hỏi pin và dung lượng - hành động có hậu quả luôn hỏi xác nhận trước, gỡ ứng dụng thì không tự làm, và mọi hành động đều được ghi nhật ký; kèm giọng nói (nghe một lần khi bấm nút, đọc câu trả lời và tự hạ nhạc khi đọc).",
-  "abiApks": {
-    "arm64-v8a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.6.0/car-launcher-0.6.0-normal-arm64-v8a.apk",
-      "sha256": "838461e48ecf910ac7c23e56b441a6b1a1052bcbad132327efdba08e18c481fe",
-      "size": 19654910
-    },
-    "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.6.0/car-launcher-0.6.0-normal-armeabi-v7a.apk",
-      "sha256": "e62236c1c7b1f6bd1850d305e85dbaa1537e928bcb648790901353c27eced757",
-      "size": 16765844
-    },
-    "x86_64": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.6.0/car-launcher-0.6.0-normal-x86_64.apk",
-      "sha256": "3d1fa68dfc807beb23c3ff558de7727b162c741e59e74dfc82fdd05f509ca266",
-      "size": 20825989
-    },
-    "universal": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.6.0/car-launcher-0.6.0-normal-universal.apk",
-      "sha256": "6cac5bc1a960f8608755a967a58467468322d7fa0857000f87567e8947cdca25",
-      "size": 33289623
-    }
-  },
+  "versionCode": 15,
+  "versionName": "0.7.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.7.0/car-launcher-0.7.0-system-arm-PLATFORM-KEY.apk",
+  "sha256": "4deba9a9a463603cdfcac8d6328f9edb86ccd5b2f453c02ad61e1dd5c7ade4a3",
+  "changelog": "0.7.0: MỌI bản phát hành nay BẮT BUỘC phải nhúng được ứng dụng vào ô — nếu thiếu bản system thì quy trình phát hành tự dừng, và trên máy, launcher từ chối cài bản không nhúng được app. Giao diện đổi sang chất liệu kính mới (viền sáng phản chiếu ở cạnh trên, cạnh dưới tối, chiều sâu), chuyển cảnh và phản hồi chạm mượt hơn, và thêm mức hiệu ứng Tiết kiệm - Cân bằng - Cao trong Cài đặt; máy yếu hạ xuống Tiết kiệm là nhẹ nhất. Bản gửi cho head unit giờ chỉ chứa ABI ARM nên mỗi lần cập nhật nhẹ hơn khoảng 18 MB, kèm bỏ 1,2 MB ảnh gốc không dùng và siết bộ nhớ ảnh. Thêm công cụ đo khung hình để lần sau tối ưu có số liệu thay vì phỏng đoán.",
+  "abiApks": {},
   "package": "com.haison.carlauncher",
   "flavor": "system"
 }
