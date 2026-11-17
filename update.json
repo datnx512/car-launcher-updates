@@ -1,29 +1,29 @@
 {
-  "versionCode": 12,
-  "versionName": "0.4.1",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.1/car-launcher-0.4.1-system-universal-PLATFORM-KEY.apk",
-  "sha256": "926681f06dd71c9868f25075fe11dd7a2fd82b76d8afb24cd660f10cf9141897",
-  "changelog": "0.4.1 — Lớp phủ nằm trên ô, cử chỉ không còn chết Sửa 3 lỗi của 0.4.0: 1. Sheet / hộp thoại / SnackBar không còn bị app trong ô che. Mọi lớp phủ đi qua withPanesHidden(): tạm ẩn các ô (Offstage + setPaneHidden), mở lớp phủ, rồi hiện lại. App trong ô không bị dựng lại (pid không đổi). 2. Cử chỉ vuốt lên không còn chết sau lần đầu mở bảng chọn. Bỏ gesture arena của PlatformViewSurface (nguồn lỗi LateInitializationError: pointTransformer), thay bằng Listener ở tầng Flutter; chạm vẫn được chuyển xuống app bằng injectPaneTouch. Vuốt mở bảng chọn dùng được nhiều lần liên tiếp. 3. Bỏ app khỏi ô rồi chọn app mới không còn báo lỗi sai \"cần flavor system\". View id được xoá và publish lại khi bỏ app; app mới mở trên ô mới. Nội bộ: 75 test Dart, 5 test contract Kotlin, flutter analyze sạch.",
+  "versionCode": 13,
+  "versionName": "0.5.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.5.0/car-launcher-0.5.0-system-universal-PLATFORM-KEY.apk",
+  "sha256": "17acbf604444c44ef3686cca363a50fcabe7348a570960f7617c033b3640651c",
+  "changelog": "0.5.0 — Nhỏ hơn 25 %, sửa lỗi thanh media, cứu launcher khỏi tình huống kẹt Kích thước: font SF Pro của Apple được thay bằng Inter (giấy phép SIL OFL, đã lọc còn Latin + tiếng Việt), và bật R8 + shrinkResources cho bản phát hành. Bản universal 67,5 MB -> 50,5 MB, bản arm64-v8a 36,3 MB -> 19,3 MB. Bản universal phát hành chỉ còn ARM (emulator vẫn dùng bản tách ABI x86_64). Sửa lỗi: thanh media không bao giờ hiện. Host đã attach session nhưng hai sự kiện đầu tiên bị mất vì phía Dart đăng ký listener sau khi chờ mediaStart trả về. Chỉ tìm ra được nhờ app fixture tạo MediaSession thật, vì image AOSP không có app nhạc nào. An toàn hơn: app tự mở task mới (ví dụ Files) không còn phủ màn hình launcher ở mọi lần mở sau. Bảng chọn ứng dụng cảnh báo trước, và ứng dụng đó bị bỏ khỏi ô ngay trước khi dựng giao diện. Nhẹ pin hơn: vòng theo dõi danh sách ứng dụng ngừng gọi host khi launcher không hiện trước người dùng (đo được: tiền cảnh 2 lời gọi mỗi 100 giây, hậu cảnh 0). Nội bộ: 82 test Dart, 5 test contract Kotlin, analyze sạch, CI chạy analyze + test mỗi lần push.",
   "abiApks": {
     "arm64-v8a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.1/car-launcher-0.4.1-normal-arm64-v8a.apk",
-      "sha256": "63cdb840467ca86efb3a96dda0e139e75aecef68d80f055984d48ca43353a265",
-      "size": 38108269
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.5.0/car-launcher-0.5.0-normal-arm64-v8a.apk",
+      "sha256": "e078d4a239229d9348ef0619021a9eb6357b9e64daeac8c7b5b5032d6a7f11aa",
+      "size": 19294920
     },
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.1/car-launcher-0.4.1-normal-armeabi-v7a.apk",
-      "sha256": "3e0a6a5ed51e4d225c73ecfac1c262d823d67c07214d5c5960c3228cc9a22f02",
-      "size": 35481347
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.5.0/car-launcher-0.5.0-normal-armeabi-v7a.apk",
+      "sha256": "3331df37108160d4341cc1c138a801a1c23629c685b9a2a926a02e3b15a1d7ff",
+      "size": 16405854
     },
     "x86_64": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.1/car-launcher-0.4.1-normal-x86_64.apk",
-      "sha256": "3701132bbb92fb4670f9062170662efb4daadab138f64358c21ee91922022923",
-      "size": 39279348
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.5.0/car-launcher-0.5.0-normal-x86_64.apk",
+      "sha256": "712e5b4b70e98a78af08bddab06fe7487082ea5fe16dbabbcd43a006cfc57476",
+      "size": 20400463
     },
     "universal": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.4.1/car-launcher-0.4.1-normal-universal.apk",
-      "sha256": "d30d7c9f364ed7e0c77e0c0c61498ed21ac6a1a0f5976470b2a43fd2ed737546",
-      "size": 70835486
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.5.0/car-launcher-0.5.0-normal-universal.apk",
+      "sha256": "1be80e9e5da2dc9d73589fe1e059d27fd3c731b31196f75f3810f7834e8e4725",
+      "size": 32601953
     }
   },
   "package": "com.haison.carlauncher",
