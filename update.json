@@ -1,10 +1,23 @@
 {
-  "versionCode": 15,
-  "versionName": "0.7.0",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.7.0/car-launcher-0.7.0-system-arm-PLATFORM-KEY.apk",
-  "sha256": "4deba9a9a463603cdfcac8d6328f9edb86ccd5b2f453c02ad61e1dd5c7ade4a3",
-  "changelog": "0.7.0: MỌI bản phát hành nay BẮT BUỘC phải nhúng được ứng dụng vào ô — nếu thiếu bản system thì quy trình phát hành tự dừng, và trên máy, launcher từ chối cài bản không nhúng được app. Giao diện đổi sang chất liệu kính mới (viền sáng phản chiếu ở cạnh trên, cạnh dưới tối, chiều sâu), chuyển cảnh và phản hồi chạm mượt hơn, và thêm mức hiệu ứng Tiết kiệm - Cân bằng - Cao trong Cài đặt; máy yếu hạ xuống Tiết kiệm là nhẹ nhất. Bản gửi cho head unit giờ chỉ chứa ABI ARM nên mỗi lần cập nhật nhẹ hơn khoảng 18 MB, kèm bỏ 1,2 MB ảnh gốc không dùng và siết bộ nhớ ảnh. Thêm công cụ đo khung hình để lần sau tối ưu có số liệu thay vì phỏng đoán.",
-  "abiApks": {},
+  "versionCode": 16,
+  "versionName": "0.8.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.8.0/car-launcher-0.8.0-system-arm64-v8a-PLATFORM-KEY.apk",
+  "sha256": "a009257ad3ba7e28f901622148cb57a0c36768fa9a470fa2fa35c41349e4554a",
+  "changelog": "0.8.0: Bản này nhắm vào đúng chiếc head unit của bạn (Android 10, màn 1280x720, 3 GB RAM) và vào việc dùng launcher trên nhiều máy khác nhau. Gói cập nhật nay chỉ chứa đúng loại CPU của máy nên nhẹ hơn khoảng 13,6 MB (18,5 MB thay vì 32,1 MB), và trước khi tải, launcher tự kiểm tra bản cập nhật có hợp với máy không (CPU, phiên bản Android, loại bản hệ thống) — hết cảnh tải xong mới báo lỗi. Trên Android 10, launcher tự tắt hộp thoại \"Viewing full screen\" vốn giữ màn hình và làm ứng dụng không mở được trong ô, tự chọn đúng cách giữ ứng dụng trong ô của phiên bản Android đó, và nói rõ khi máy không giữ được ô (thay vì im lặng). Thêm mục \"Về máy này\" trong Cài đặt để đọc số thật của máy bạn (phiên bản Android thật, loại CPU, màn hình, giới hạn bộ nhớ) vì màn \"Giới thiệu máy\" của head unit có thể hiện sai. Bố cục cũng tự hợp với màn hình: màn hẹp chỉ mở một ô thay vì chia đôi chật. Lưu ý trung thực: trên Android 10, việc mở ứng dụng trong ô còn chập chờn (đo được 6/12 rồi 1/12 giữa các lần chạy) — chưa app nào mở toàn màn hình chiếm màn hình chính, và launcher vẫn dùng bình thường; cần thử trên máy thật để chốt.",
+  "abiApks": {
+    "armeabi-v7a": {
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.8.0/car-launcher-0.8.0-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "sha256": "eb3a4a596c0d6b6bd3c558d6b453dce42e7f8c3fdaa92bbd4c7ca288565a0081",
+      "size": 15642131
+    }
+  },
   "package": "com.haison.carlauncher",
-  "flavor": "system"
+  "flavor": "system",
+  "requirements": {
+    "minSdk": 29,
+    "abis": [
+      "arm64-v8a"
+    ],
+    "flavor": "system"
+  }
 }
