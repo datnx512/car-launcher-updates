@@ -1,17 +1,17 @@
 {
-  "versionCode": 18,
-  "versionName": "0.10.0",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.10.0/car-launcher-0.10.0-system-arm64-v8a-PLATFORM-KEY.apk",
+  "versionCode": 19,
+  "versionName": "0.11.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.0/car-launcher-0.10.0-system-arm64-v8a-PLATFORM-KEY.apk",
   "sha256": "4c90eb2f92892a0edfd29e5c62a5aae224540cb7277a97ef59d359d3ccf2c78b",
-  "changelog": "0.10.0 — Nhóm 2 ứng dụng trên dock - Bỏ nút \"Chia đôi màn hình\" khỏi dock: màn hình chính luôn chia đôi khi máy nhúng được app; lưới ứng dụng vẫn vào bằng nút Ứng dụng. - Thêm \"nhóm 2 app\": khi hai ô đang có hai app khác nhau, dock hiện hàng \"Ghim nhóm này\"; chạm để lưu cặp đó (tối đa 4 nhóm). - Chạm một nhóm trong dock: đưa đúng hai app đó vào hai ô. Chạm lại nhóm đang dùng không làm gì, nên app đang chạy không bị mở lại. - Nhấn giữ nhóm để bỏ nhóm khỏi dock. Nhóm có app bị gỡ cài sẽ tự được dọn. - Sửa lỗi: một cú chạm nhóm trước đây mở app của ô đầu hai lần trên cùng display.",
+  "changelog": "Đổi tên thương hiệu và mã gói. Đây là bản đổi danh tính, không phải bản thêm tính năng. - Tên hiển thị: CarNext Launcher (trước: Car Launcher). - `applicationId`: `com.carnext.launcher` (bản `system`), `com.carnext.launcher.normal` (bản `normal`). - Kotlin package, `namespace`, tên platform channel, PlatformView type và action kết quả cài đặt đều theo mã gói mới. - Gói Dart: `carnext_launcher`; tệp phát hành đổi thành `carnext-launcher-<ver>-…apk`. - Không đổi: tên hai repo GitHub và URL `update.json`, khoá SharedPreferences (`cl.*`), `sharedUserId=android.uid.system`, khoá ký platform. Lần đầu chạy bản `system`, app tự chép trạng thái đã lưu của bản cũ (`com.haison.carlauncher`) sang: ứng dụng trong 2 ô, ứng dụng ghim trên dock, nhóm 2 ứng dụng, danh sách \"gần đây\", mức hiệu ứng, hình nền, số shortcut. Không ghi đè nếu bản mới đã có dữ liệu; mọi lỗi đều bị nuốt để không chặn khởi động. - Manifest ghi `package` khác gói đang chạy ⇒ app từ chối cài kèm lý do rõ, trước khi tải. Chặn cảnh `PackageInstaller` cài thêm một app thứ hai thay vì nâng cấp. - Bản cũ không được nâng cấp (Android coi là app khác): mở CarNext Launcher → Cài đặt → *Đặt làm mặc định*; cấp lại quyền đã từng cấp (`WRITE_SETTINGS`…); sau khi xác nhận chạy đúng thì gỡ `com.haison.carlauncher`. - Chi tiết: `docs/known-issues.md` §17.",
   "abiApks": {
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.10.0/car-launcher-0.10.0-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.0/car-launcher-0.10.0-system-armeabi-v7a-PLATFORM-KEY.apk",
       "sha256": "a41cffc1178a7ed937c4d24fac0212486525dcf4f3f00f92b4c565bc64132f8a",
       "size": 15707851
     }
   },
-  "package": "com.haison.carlauncher",
+  "package": "com.carnext.launcher",
   "flavor": "system",
   "requirements": {
     "minSdk": 29,
