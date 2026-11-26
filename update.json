@@ -1,14 +1,14 @@
 {
-  "versionCode": 19,
-  "versionName": "0.11.0",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.0/carnext-launcher-0.11.0-system-arm64-v8a-PLATFORM-KEY.apk",
-  "sha256": "f2e36cb5efe0d37b2041a01cb67d105931f5b33796a4cb87805f24ab0719581a",
-  "changelog": "Đổi tên thương hiệu và mã gói. Đây là bản đổi danh tính, không phải bản thêm tính năng. - Tên hiển thị: CarNext Launcher (trước: Car Launcher). - `applicationId`: `com.carnext.launcher` (bản `system`), `com.carnext.launcher.normal` (bản `normal`). - Kotlin package, `namespace`, tên platform channel, PlatformView type và action kết quả cài đặt đều theo mã gói mới. - Gói Dart: `carnext_launcher`; tệp phát hành đổi thành `carnext-launcher-<ver>-…apk`. - Không đổi: tên hai repo GitHub và URL `update.json`, khoá SharedPreferences (`cl.*`), `sharedUserId=android.uid.system`, khoá ký platform. Lần đầu chạy bản `system`, app tự chép trạng thái đã lưu của bản cũ (`com.haison.carlauncher`) sang: ứng dụng trong 2 ô, ứng dụng ghim trên dock, nhóm 2 ứng dụng, danh sách \"gần đây\", mức hiệu ứng, hình nền, số shortcut. Không ghi đè nếu bản mới đã có dữ liệu; mọi lỗi đều bị nuốt để không chặn khởi động. - Manifest ghi `package` khác gói đang chạy ⇒ app từ chối cài kèm lý do rõ, trước khi tải. Chặn cảnh `PackageInstaller` cài thêm một app thứ hai thay vì nâng cấp. - Bản cũ không được nâng cấp (Android coi là app khác): mở CarNext Launcher → Cài đặt → *Đặt làm mặc định*; cấp lại quyền đã từng cấp (`WRITE_SETTINGS`…); sau khi xác nhận chạy đúng thì gỡ `com.haison.carlauncher`. - Chi tiết: `docs/known-issues.md` §17.",
+  "versionCode": 20,
+  "versionName": "0.11.1",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.1/carnext-launcher-0.11.1-system-arm64-v8a-PLATFORM-KEY.apk",
+  "sha256": "94cd73f5d6cdd4bf25565732d8b243b6e4cb7e3c3b8923dad3da6c576fd78b3d",
+  "changelog": "CarNext Launcher 0.11.1 - Icon ứng dụng mới: giữ nguyên mark COPNext (vành chữ C hở khẩu độ sang phải) và đặt một ô tô vào lòng chữ C, thay cho logo Flutter mặc định đang dùng từ trước tới nay. - Splash mới: nền tối #0B0B0D với mark trắng/xanh. Nền splash tách khỏi nền icon nên mở app không còn chớp sáng rồi tối. - Adaptive icon dùng vector thay cho ảnh PNG: sắc nét ở mọi mật độ và không bị mask tròn của launcher cắt mất vành chữ C. - Cả bộ icon (5 mật độ mipmap, vector foreground, splash, ảnh giới thiệu) sinh từ một nguồn hình học duy nhất là tools/gen_app_icon.py, có chế độ --check để phát hiện tệp bị sửa tay. - Test mới kiểm kích thước mipmap, góc bo trong suốt, vùng an toàn của mark và việc nền splash tách khỏi nền icon. - README có mark mới; thêm docs/branding.md mô tả hình học và bảng màu.",
   "abiApks": {
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.0/carnext-launcher-0.11.0-system-armeabi-v7a-PLATFORM-KEY.apk",
-      "sha256": "470b588551c849adf021fe3bd8bc9cb50629a5fd242e457851063fcd8a689f90",
-      "size": 15707851
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.1/carnext-launcher-0.11.1-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "sha256": "9e11e38b6d76e3c2920b12abc35af5d45e1d4e357ff639e9b2877b8b2e0e0bbc",
+      "size": 15715975
     }
   },
   "package": "com.carnext.launcher",
