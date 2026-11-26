@@ -1,14 +1,14 @@
 {
-  "versionCode": 23,
-  "versionName": "0.13.0",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.13.0/carnext-launcher-0.13.0-system-arm64-v8a-PLATFORM-KEY.apk",
-  "sha256": "4061619b962cd70e858ef70907fa1f7a71fa6ba037af9b981eabf8539cd3f099",
-  "changelog": "CarNext Launcher 0.13.0 1. Khoá API của trợ lý AI không còn nằm dạng chữ thường trong shared_prefs. App mã hoá AES-GCM rồi cất bản mã ở secrets.xml, khoá giải mã nằm trong Android Keystore (alias carnext.secret.v1). Ai copy được tệp prefs cũng không đọc ra khoá. 2. Ô nhập khoá API giờ che ký tự, có nút hiện/ẩn và nút \"Xoá khoá\". Bản cũ để khoá chữ thường sẽ được chuyển sang Keystore ở lần mở đầu tiên rồi xoá khỏi prefs. 3. Nếu máy không tạo được khoá Keystore, app báo rõ và giữ nguyên trạng thái cũ thay vì lưu khoá ở dạng đọc được. 4. Bộ lệnh offline của trợ lý rộng hơn: giờ hiện tại, hôm nay thứ mấy, ngày, thời tiết (nói rõ cần mạng), \"ô trái/phải đang mở gì\", thông tin máy, pin, dung lượng, phiên bản; nhận thêm cách nói như \"vào cài đặt\", \"mở ứng dụng camera\", \"độ sáng 70 phần trăm\". 5. Sửa thứ tự luật để câu hỏi thời tiết không bị luật ngày nuốt, và \"mở bản đồ ở ô trái\" không bị luật \"ô đang mở gì\" bắt nhầm. 6. Hợp đồng kênh chính tăng từ 60 lên 63 method (secureSet, secureGet, secureClear); thêm 21 ca test (384 ca Dart, analyze sạch).",
+  "versionCode": 24,
+  "versionName": "0.14.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.14.0/carnext-launcher-0.14.0-system-arm64-v8a-PLATFORM-KEY.apk",
+  "sha256": "602eaa39e33a9f6fcc346a5a1809fbfa4e621671421fc902118f1fd21407ce47",
+  "changelog": "0.14.0 - Tro ly AI: bubble, ngu canh, model cloud, bo nho dai han - Next hien thanh vien tron 56 dp o mep man hinh, luon noi tren hai o ung dung. Cham de mo, giu de mo nhanh, keo de doi mep; vi tri duoc nho qua lan mo sau va qua ca khi xoay man hinh. - Next biet gio, thu, buoi, o trai/phai dang mo ung dung gi, nhac dang phat, wifi/diem phat, va canh bao khi do sang hoac am luong bat thuong. - Cai dat -> Tro ly AI: chon nha cung cap model (OpenAI, Gemini, OpenRouter, Groq, DeepSeek, xAI, Mistral, LLM trong nha, tu cau hinh). Chon xong tu dien dia chi API va ten model. Nut Kiem tra ket noi goi that mot luot roi dich loi thanh cau de hieu. - Bo nho dai han tren may: noi \"nho giup toi thich ca phe sua da\" la lan sau Next nho; hoi \"dang nho gi ve toi\" de xem; \"quen nhac Trinh\" de xoa. Cai dat -> Bo nho cho xem va xoa tung dieu. Bo nho khong tu gui di dau. - Giong dieu moi: tro ly ten Next, xung \"minh\", goi \"ban\", cau ngan de nghe tren loa. - Hop dong kenh 63 -> 67 (them AssistantBubble va 4 method cho bubble). - Sua: bubble bi cat nua vien o mep phai; loi PlatformException khi doi mau bubble; \"nho hon chut\" tung bi hieu thanh lenh \"nho ...\". - 451 test Dart, 17 test Kotlin.",
   "abiApks": {
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.13.0/carnext-launcher-0.13.0-system-armeabi-v7a-PLATFORM-KEY.apk",
-      "sha256": "d326509d7ecd0dc961207dbc89ae78a5a32d5e299184e52dfc24e74b7fd8d7b7",
-      "size": 15754839
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.14.0/carnext-launcher-0.14.0-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "sha256": "303f43195215f711af1d2ba0cead124a4a84d17160fb9dfbf446cf30c7c8f6a8",
+      "size": 15969151
     }
   },
   "package": "com.carnext.launcher",
