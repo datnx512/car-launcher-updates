@@ -1,14 +1,14 @@
 {
-  "versionCode": 22,
-  "versionName": "0.12.0",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.12.0/carnext-launcher-0.12.0-system-arm64-v8a-PLATFORM-KEY.apk",
-  "sha256": "9bffccde168a6222f828b812ef7b6b46ff0363d49b55b0844419a51186ca2d8b",
-  "changelog": "CarNext Launcher 0.12.0 - Chế độ tối: đổi cả hệ thống thật (trước chỉ đổi giao diện công tắc). - Định dạng 24 giờ: hết lỗi \"No active stream to cancel\". - New engine: có tác dụng thật (huỷ engine cũ, tạo mới khi khởi động lại). - Impeller: bỏ công tắc vì bản Flutter này không tắt được Impeller; thay bằng dòng ghi chú. - Launcher mặc định: trạng thái cập nhật ngay sau khi đặt; lỗi hiện thông báo. - Thêm công tắc Tự kiểm tra bản mới (1 lần/24 giờ, không tự tải). - Thông báo lỗi dùng tông tối của launcher; ô nhập của Trợ lý AI lưu sau 300 ms. - Hợp đồng kênh 60 method (thêm getDarkMode, restartProcess). Test: 363 Dart + 9 Kotlin.",
+  "versionCode": 23,
+  "versionName": "0.13.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.13.0/carnext-launcher-0.13.0-system-arm64-v8a-PLATFORM-KEY.apk",
+  "sha256": "4061619b962cd70e858ef70907fa1f7a71fa6ba037af9b981eabf8539cd3f099",
+  "changelog": "CarNext Launcher 0.13.0 1. Khoá API của trợ lý AI không còn nằm dạng chữ thường trong shared_prefs. App mã hoá AES-GCM rồi cất bản mã ở secrets.xml, khoá giải mã nằm trong Android Keystore (alias carnext.secret.v1). Ai copy được tệp prefs cũng không đọc ra khoá. 2. Ô nhập khoá API giờ che ký tự, có nút hiện/ẩn và nút \"Xoá khoá\". Bản cũ để khoá chữ thường sẽ được chuyển sang Keystore ở lần mở đầu tiên rồi xoá khỏi prefs. 3. Nếu máy không tạo được khoá Keystore, app báo rõ và giữ nguyên trạng thái cũ thay vì lưu khoá ở dạng đọc được. 4. Bộ lệnh offline của trợ lý rộng hơn: giờ hiện tại, hôm nay thứ mấy, ngày, thời tiết (nói rõ cần mạng), \"ô trái/phải đang mở gì\", thông tin máy, pin, dung lượng, phiên bản; nhận thêm cách nói như \"vào cài đặt\", \"mở ứng dụng camera\", \"độ sáng 70 phần trăm\". 5. Sửa thứ tự luật để câu hỏi thời tiết không bị luật ngày nuốt, và \"mở bản đồ ở ô trái\" không bị luật \"ô đang mở gì\" bắt nhầm. 6. Hợp đồng kênh chính tăng từ 60 lên 63 method (secureSet, secureGet, secureClear); thêm 21 ca test (384 ca Dart, analyze sạch).",
   "abiApks": {
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.12.0/carnext-launcher-0.12.0-system-armeabi-v7a-PLATFORM-KEY.apk",
-      "sha256": "806fbca700b0aa63a8d9596dcc3d9ac5bb11812b97adff21b584e4cd6a28c8cb",
-      "size": 15738455
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.13.0/carnext-launcher-0.13.0-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "sha256": "d326509d7ecd0dc961207dbc89ae78a5a32d5e299184e52dfc24e74b7fd8d7b7",
+      "size": 15754839
     }
   },
   "package": "com.carnext.launcher",
