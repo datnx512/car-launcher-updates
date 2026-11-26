@@ -1,14 +1,14 @@
 {
-  "versionCode": 16,
-  "versionName": "0.8.0",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.8.0/car-launcher-0.8.0-system-arm64-v8a-PLATFORM-KEY.apk",
-  "sha256": "a009257ad3ba7e28f901622148cb57a0c36768fa9a470fa2fa35c41349e4554a",
-  "changelog": "0.8.0: Bản này nhắm vào đúng chiếc head unit của bạn (Android 10, màn 1280x720, 3 GB RAM) và vào việc dùng launcher trên nhiều máy khác nhau. Gói cập nhật nay chỉ chứa đúng loại CPU của máy nên nhẹ hơn khoảng 13,6 MB (18,5 MB thay vì 32,1 MB), và trước khi tải, launcher tự kiểm tra bản cập nhật có hợp với máy không (CPU, phiên bản Android, loại bản hệ thống) — hết cảnh tải xong mới báo lỗi. Trên Android 10, launcher tự tắt hộp thoại \"Viewing full screen\" vốn giữ màn hình và làm ứng dụng không mở được trong ô, tự chọn đúng cách giữ ứng dụng trong ô của phiên bản Android đó, và nói rõ khi máy không giữ được ô (thay vì im lặng). Thêm mục \"Về máy này\" trong Cài đặt để đọc số thật của máy bạn (phiên bản Android thật, loại CPU, màn hình, giới hạn bộ nhớ) vì màn \"Giới thiệu máy\" của head unit có thể hiện sai. Bố cục cũng tự hợp với màn hình: màn hẹp chỉ mở một ô thay vì chia đôi chật. Lưu ý trung thực: trên Android 10, việc mở ứng dụng trong ô còn chập chờn (đo được 6/12 rồi 1/12 giữa các lần chạy) — chưa app nào mở toàn màn hình chiếm màn hình chính, và launcher vẫn dùng bình thường; cần thử trên máy thật để chốt.",
+  "versionCode": 17,
+  "versionName": "0.9.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.9.0/car-launcher-0.9.0-system-arm64-v8a-PLATFORM-KEY.apk",
+  "sha256": "97261be3b0fed2f0dc67cfd819be4bd1bdc01a1f1d3c22174cc25cbb771cc604",
+  "changelog": "Bản này chỉ về giao diện và chuyển động. Bố cục - Dock thành pill nổi: bo tròn bốn góc, viền + bóng, cách mép 12 dp. - Chiều cao dock bằng chiều cao vùng ô (dock và hai ô nằm trong một hàng, giãn đều). - Hai ô chia đôi đúng nghĩa 50/50 (bỏ tỉ lệ 0,6/0,4 cho màn rộng). - Bỏ hẳn thanh media ở đáy: nhạc điều khiển bằng app nhạc trong ô hoặc bằng trợ lý. Chuyển động - Ba mức hiệu ứng giờ khác nhau thật: Tiết kiệm không dựng animation; Cân bằng có phản hồi nhấn, fade, cross-fade đồng hồ và WiFi; Cao thêm vệt sáng quét trên dock và chấm \"thở\" ở app đang chạy. - Đổi mức trong Cài đặt có tác dụng ngay, không cần khởi động lại. - Icon trên dock lún nhẹ khi nhấn, hiện dần theo nhịp khi mở màn hình. Bảng chọn app của ô - Tiêu đề nói rõ đang chọn cho ô nào: ô trái, ô phải, ô trên, ô dưới. - Nhóm \"Gần đây\" đứng đầu danh sách. - App đang hiện ở ô bên kia được ghi chú ngay dưới tên. Bảng điều khiển nhanh (mới) - Mở bằng cách chạm khối đồng hồ trên dock. - Âm lượng, độ sáng, WiFi, điểm phát, chế độ tối. - Kéo thanh trượt được gộp lệnh (1-2 lệnh thay vì mỗi khung hình). - Máy không báo âm lượng hoặc thiếu quyền đổi độ sáng thì thanh trượt khoá lại kèm lý do. Đã sửa - SnackBar trong bảng điều khiển nhanh bị che dưới lớp phủ: nay báo lỗi ngay trong bảng. - Lỗi khởi tạo widget hiệu ứng đọc MediaQuery trong initState (crash khi dựng dock). - Thiếu chế độ hit-test ở PressScale khiến icon không có phản hồi nhấn. Kiểm chứng: 321 test Dart xanh, flutter analyze sạch, 7 ca bố cục đo 4 cỡ màn hình, chạy thật trên emulator AOSP API 33.",
   "abiApks": {
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.8.0/car-launcher-0.8.0-system-armeabi-v7a-PLATFORM-KEY.apk",
-      "sha256": "eb3a4a596c0d6b6bd3c558d6b453dce42e7f8c3fdaa92bbd4c7ca288565a0081",
-      "size": 15642131
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.9.0/car-launcher-0.9.0-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "sha256": "ec594e4603f1d528449c8b2337ef7ebfae56bd8d60421abedfecf60cb6459a52",
+      "size": 15691463
     }
   },
   "package": "com.haison.carlauncher",
