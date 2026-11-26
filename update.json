@@ -1,14 +1,14 @@
 {
-  "versionCode": 21,
-  "versionName": "0.11.2",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.2/carnext-launcher-0.11.2-system-arm64-v8a-PLATFORM-KEY.apk",
-  "sha256": "c2d771a6443d822d9931de2ee96e0f151b180e0dd90c6c8cd07f79012384ba98",
-  "changelog": "CarNext Launcher 0.11.2 - Dáng ô tô trong icon/splash được làm lại: sedan nhìn ngang đúng tỉ lệ, có hai khoang kính ngăn bởi trụ B, hốc bánh khoét thật để lộ lốp, lazăng ở tâm bánh. Bản trước chỉ là một khối phẳng, trông như hình đồ chơi. - Nóc xe thành vòm nhẹ thay vì nóc phẳng, mũi xe thấp hơn nóc và ca-pô dài hơn - ba chi tiết khiến nó đọc ra xe con chứ không phải xe tải. - Vành chữ C vẫn giữ nguyên hình học của COPNext, không đổi. - Sửa lỗi khi làm dáng: cửa sổ đặt sai vị trí làm phần khoét ăn vào sườn xe, tạo vết khía ở đuôi và mũi; nay cửa sổ nằm gọn trong vùng cabin. - Màu sắc giữ nguyên hoàn toàn. - Ảnh chụp splash và icon hệ thống render được cập nhật trong docs/screenshots.",
+  "versionCode": 22,
+  "versionName": "0.12.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.12.0/carnext-launcher-0.12.0-system-arm64-v8a-PLATFORM-KEY.apk",
+  "sha256": "9bffccde168a6222f828b812ef7b6b46ff0363d49b55b0844419a51186ca2d8b",
+  "changelog": "CarNext Launcher 0.12.0 - Chế độ tối: đổi cả hệ thống thật (trước chỉ đổi giao diện công tắc). - Định dạng 24 giờ: hết lỗi \"No active stream to cancel\". - New engine: có tác dụng thật (huỷ engine cũ, tạo mới khi khởi động lại). - Impeller: bỏ công tắc vì bản Flutter này không tắt được Impeller; thay bằng dòng ghi chú. - Launcher mặc định: trạng thái cập nhật ngay sau khi đặt; lỗi hiện thông báo. - Thêm công tắc Tự kiểm tra bản mới (1 lần/24 giờ, không tự tải). - Thông báo lỗi dùng tông tối của launcher; ô nhập của Trợ lý AI lưu sau 300 ms. - Hợp đồng kênh 60 method (thêm getDarkMode, restartProcess). Test: 363 Dart + 9 Kotlin.",
   "abiApks": {
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.2/carnext-launcher-0.11.2-system-armeabi-v7a-PLATFORM-KEY.apk",
-      "sha256": "53c091a4a4b6b6b2061d01fefaa36f9d5da77b1fae86202684ea79445bc26e3a",
-      "size": 15721547
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.12.0/carnext-launcher-0.12.0-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "sha256": "806fbca700b0aa63a8d9596dcc3d9ac5bb11812b97adff21b584e4cd6a28c8cb",
+      "size": 15738455
     }
   },
   "package": "com.carnext.launcher",
