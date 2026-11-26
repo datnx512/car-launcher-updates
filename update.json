@@ -1,14 +1,14 @@
 {
-  "versionCode": 20,
-  "versionName": "0.11.1",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.1/carnext-launcher-0.11.1-system-arm64-v8a-PLATFORM-KEY.apk",
-  "sha256": "94cd73f5d6cdd4bf25565732d8b243b6e4cb7e3c3b8923dad3da6c576fd78b3d",
-  "changelog": "CarNext Launcher 0.11.1 - Icon ứng dụng mới: giữ nguyên mark COPNext (vành chữ C hở khẩu độ sang phải) và đặt một ô tô vào lòng chữ C, thay cho logo Flutter mặc định đang dùng từ trước tới nay. - Splash mới: nền tối #0B0B0D với mark trắng/xanh. Nền splash tách khỏi nền icon nên mở app không còn chớp sáng rồi tối. - Adaptive icon dùng vector thay cho ảnh PNG: sắc nét ở mọi mật độ và không bị mask tròn của launcher cắt mất vành chữ C. - Cả bộ icon (5 mật độ mipmap, vector foreground, splash, ảnh giới thiệu) sinh từ một nguồn hình học duy nhất là tools/gen_app_icon.py, có chế độ --check để phát hiện tệp bị sửa tay. - Test mới kiểm kích thước mipmap, góc bo trong suốt, vùng an toàn của mark và việc nền splash tách khỏi nền icon. - README có mark mới; thêm docs/branding.md mô tả hình học và bảng màu.",
+  "versionCode": 21,
+  "versionName": "0.11.2",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.2/carnext-launcher-0.11.2-system-arm64-v8a-PLATFORM-KEY.apk",
+  "sha256": "c2d771a6443d822d9931de2ee96e0f151b180e0dd90c6c8cd07f79012384ba98",
+  "changelog": "CarNext Launcher 0.11.2 - Dáng ô tô trong icon/splash được làm lại: sedan nhìn ngang đúng tỉ lệ, có hai khoang kính ngăn bởi trụ B, hốc bánh khoét thật để lộ lốp, lazăng ở tâm bánh. Bản trước chỉ là một khối phẳng, trông như hình đồ chơi. - Nóc xe thành vòm nhẹ thay vì nóc phẳng, mũi xe thấp hơn nóc và ca-pô dài hơn - ba chi tiết khiến nó đọc ra xe con chứ không phải xe tải. - Vành chữ C vẫn giữ nguyên hình học của COPNext, không đổi. - Sửa lỗi khi làm dáng: cửa sổ đặt sai vị trí làm phần khoét ăn vào sườn xe, tạo vết khía ở đuôi và mũi; nay cửa sổ nằm gọn trong vùng cabin. - Màu sắc giữ nguyên hoàn toàn. - Ảnh chụp splash và icon hệ thống render được cập nhật trong docs/screenshots.",
   "abiApks": {
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.1/carnext-launcher-0.11.1-system-armeabi-v7a-PLATFORM-KEY.apk",
-      "sha256": "9e11e38b6d76e3c2920b12abc35af5d45e1d4e357ff639e9b2877b8b2e0e0bbc",
-      "size": 15715975
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.11.2/carnext-launcher-0.11.2-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "sha256": "53c091a4a4b6b6b2061d01fefaa36f9d5da77b1fae86202684ea79445bc26e3a",
+      "size": 15721547
     }
   },
   "package": "com.carnext.launcher",
