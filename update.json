@@ -1,14 +1,14 @@
 {
-  "versionCode": 27,
-  "versionName": "0.16.1",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.16.1/carnext-launcher-0.16.1-system-arm64-v8a-PLATFORM-KEY.apk",
-  "sha256": "0177502e55d59b298e1e47925d1372e85bf092208c5e9738bef10d32ef999b22",
-  "changelog": "0.16.1 - Nhom 2 app tren dock to va ro hon - O nhom 2 app to hon: khung 56 dp, hai icon 32 dp chong cheo (truoc 48 dp / 24 dp). - Vi tri giu nguyen: ngay duoi khoi gio; hai nut Ung dung va Cai dat van bam day. - 479 test Dart.",
+  "versionCode": 28,
+  "versionName": "0.16.2",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.16.2/carnext-launcher-0.16.2-system-arm64-v8a-PLATFORM-KEY.apk",
+  "sha256": "5be690ab36f49f4e749ac67a0074cd74e7a542163e4987562459d73f39bcfcee",
+  "changelog": "0.16.2 - Nut \"Ghim nhom nay\" chi con bieu tuong - Nut ghim nhom tren dock bo chu, chi con bieu tuong dau trang. - Kich thuoc bang dung o nhom (56 dp vuong) nen thang cot voi cac nhom ben tren. - Chu van con trong tooltip va nhan tro nang. - 479 test Dart.",
   "abiApks": {
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.16.1/carnext-launcher-0.16.1-system-armeabi-v7a-PLATFORM-KEY.apk",
-      "sha256": "f9e4897c15f0078c46b6027170fac44f5ad352840555d44291243fab628cc95b",
-      "size": 15985483
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.16.2/carnext-launcher-0.16.2-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "sha256": "74be944942ddb494f6f14e4368eb72fc7fd2c19c6455ad950614328bb42466d9",
+      "size": 15985487
     }
   },
   "package": "com.carnext.launcher",
