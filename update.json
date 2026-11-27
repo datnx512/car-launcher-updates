@@ -1,14 +1,14 @@
 {
-  "versionCode": 25,
-  "versionName": "0.15.0",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.15.0/carnext-launcher-0.15.0-system-arm64-v8a-PLATFORM-KEY.apk",
-  "sha256": "e971a2b53706c64c0cc6fd9904fea804e8ad263f483bbca05d51c448dba81443",
-  "changelog": "0.15.0 - Thoi quen lai xe, goi y chu dong, giong doc tu nhien - Tro ly hoc thoi quen theo thu x gio. Khi mot thoi quen du ro (cung o thoi gian it nhat 3 lan va hon app thu nhi tu 2 lan), bang tro ly hien dong goi y kem nut Mo. - Hai app ngang nhau thi khong doan; thoi quen khong thay lai 8 tuan thi tu quen. - Giong doc tu nhien: da cau hinh model cloud va bat Doc cau tra loi thi tro ly doc bang giong cua nha cung cap (endpoint /audio/speech, mac dinh gpt-4o-mini-tts). Van doc duoc tren may khong co engine TTS vi am thanh phat qua MediaPlayer. Chua cau hinh, het han muc, hay provider tu choi thi tu roi ve giong may. - Tran chi phi: toi da 20.000 ky tu/ngay doc bang giong cloud; cau tra loi cat o ranh gioi cau, toi da 240 ky tu moi doan va 2 doan moi luot. Cung mot cau noi lai thi phat lai tep da luu. - Hop dong kenh 67 -> 69 (them playAudioFile, stopAudio). - 484 test Dart, 17 test Kotlin.",
+  "versionCode": 26,
+  "versionName": "0.16.0",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.16.0/carnext-launcher-0.16.0-system-arm64-v8a-PLATFORM-KEY.apk",
+  "sha256": "487e997508c86c96f239d495ffe4d1dcfd99d84f8531487acf8d77d56394d2b5",
+  "changelog": "0.16.0 - Dock gon: bo danh sach shortcut mac dinh - Dock khong con 5 icon ung dung mac dinh. Khu giua dock chi danh cho nhom 2 app ban tu ghim. - Hai loi vao co dinh luon o day dock: Ung dung (danh sach app) va Cai dat. - Bo muc \"So shortcut tren thanh ben\" trong Cai dat va hanh dong \"Ghim len rail\" trong menu giu app. - Cach ghim duy nhat bay gio la ghim nhom 2 app. - 479 test Dart.",
   "abiApks": {
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.15.0/carnext-launcher-0.15.0-system-armeabi-v7a-PLATFORM-KEY.apk",
-      "sha256": "a380c4ad7eb6c8b7bab1c98467b976ff6581a7e114ac6dd0a9334a78ed3a3b33",
-      "size": 16018443
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.16.0/carnext-launcher-0.16.0-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "sha256": "a3fec96fef2671e24f8d1a5970672bd8a5fe5a22383ec4da979077083d2ac3cd",
+      "size": 15985487
     }
   },
   "package": "com.carnext.launcher",
