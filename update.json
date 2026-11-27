@@ -2,12 +2,12 @@
   "versionCode": 31,
   "versionName": "0.18.0",
   "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.18.0/carnext-launcher-0.18.0-system-arm64-v8a-PLATFORM-KEY.apk",
-  "sha256": "c75d25d829feb3ada9198b5e57b77b617fc55314be392d4e012e67bd4a4d7af9",
+  "sha256": "a2f78a580b1743b7ff312bb30f25dc1a569b0974e29e3e0002ee975503b0d128",
   "changelog": "CarNext Launcher 0.18.0 - Nghe ranh tay \"Hey CarNext\" bang keyword spotter + ASR tieng Viet offline (sherpa-onnx), khong can mang. - Tai model (~40 MB) trong Cai dat -> Nghe ranh tay: kiem SHA-256, co tien do, huy va xoa duoc. - Tu sinh keywords.txt tu token that; chia se micro voi TTS va push-to-talk bang ref-count. - Bang tro ly tu mo khi nghe wake word, hien chu dang nhan dang roi tu gui cau lenh. - Hop dong kenh: 71 method, 17 event channel; Speech them wake/partial/asrState va scope=download. - Sua: nap model int8, tat dich vu khong con bat micro, notification khong noi doi khi mic loi. - Kiem chung: 533 test Dart, analyze sach, Kotlin compile + unit test xanh. - Luu y: chua do tren xe that (ti le nhan, pin/CPU, vong tieng); APK release tang ~30 MB/ABI chua nen.",
   "abiApks": {
     "armeabi-v7a": {
       "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.18.0/carnext-launcher-0.18.0-system-armeabi-v7a-PLATFORM-KEY.apk",
-      "sha256": "d1944effa873ad3227dbf2e68a4fa2f50c6a392cfd6fd135b6d3043b2479f536",
+      "sha256": "d24a30f217f61834816dc766fc749613f67d76ba65f4d08caec238e8c003faad",
       "size": 39513133
     }
   },
