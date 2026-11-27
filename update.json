@@ -1,14 +1,14 @@
 {
-  "versionCode": 29,
-  "versionName": "0.17.0",
-  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.17.0/carnext-launcher-0.17.0-system-arm64-v8a-PLATFORM-KEY.apk",
-  "sha256": "56cf945b5e69448346fbb91fc59f8bcb5a166f6500ae4ed72d5918fd7584b46b",
-  "changelog": "CarNext Launcher 0.17.0 Khu đồng hồ mới - Bốn tầng: giờ, thứ + ngày dương + wifi/điểm phát, ÂM LỊCH, và nhiệt độ kèm icon thời tiết. - Âm lịch tính ngay trên máy (không cần mạng, không cần GPS): đúng cả tháng nhuận, có can chi. - Chạm khu đồng hồ mở bảng điều khiển; nhấn giữ mở bảng lịch tháng, mỗi ngày hiện dương to + âm nhỏ. Thời tiết - Dùng Open-Meteo (không cần khoá API), 8 thành phố chọn sẵn, mặc định Hà Nội. - Hiện nhiệt độ hiện tại + 5 ngày tới; mất mạng thì dùng bản đã lưu và ghi rõ \"cập nhật N phút trước\". - Tắt được trong Cài đặt; khi tắt dock hiện \"—°\" thay vì đoán số. - Trợ lý trả lời được câu hỏi thời tiết bằng dữ liệu mới (dưới 3 giờ), quá cũ thì nói rõ chưa có dữ liệu. Bảng điều khiển kiểu iOS - Bảng nằm giữa màn hình, hai cột: nhạc đang phát (trước/tạm dừng/sau), WiFi - điểm phát - chế độ tối, âm lượng và độ sáng, thời tiết 5 ngày. - \"Cài đặt\" và \"Đóng\" ở góc trên; mở bảng vẫn tạm ẩn các ô như trước. - Âm lượng/độ sáng gộp thao tác 90 ms nên kéo không dội host. Sửa lỗi - Âm lịch lệch một tháng do hệ số cung hoàng đạo sai (12 thay vì 6). - Bảng điều khiển từng bị cắt chân trên màn thấp và từng trắng bảng khi host trả null cho âm lượng/độ sáng. - Không còn timer nền cho việc làm mới thời tiết (tránh timer rò rỉ trong test và khi màn hình tắt).",
+  "versionCode": 30,
+  "versionName": "0.17.1",
+  "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.17.1/carnext-launcher-0.17.1-system-arm64-v8a-PLATFORM-KEY.apk",
+  "sha256": "0e3a571567e75f90eaa570435ddd117b8022b893b9c643f551aa438266861389",
+  "changelog": "CarNext Launcher 0.17.1 - Bo bubble tro ly (vien tron noi o mep phai man hinh). - Vao tro ly bang nut Tro ly tren dock (bieu tuong lap lanh). - Hop dong kenh: 65 method, 17 event channel. - Bo ghi bo nho/thoi quen khoi dong trong main thay vi tu bubble.",
   "abiApks": {
     "armeabi-v7a": {
-      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.17.0/carnext-launcher-0.17.0-system-armeabi-v7a-PLATFORM-KEY.apk",
-      "sha256": "7991193ee21b89c540bf8c1945edceb34a06bf4d722a38955b1f6639a2ebd200",
-      "size": 16068795
+      "apkUrl": "https://github.com/datnx512/car-launcher-updates/releases/download/v0.17.1/carnext-launcher-0.17.1-system-armeabi-v7a-PLATFORM-KEY.apk",
+      "sha256": "b98793ad960431a74f93ccad33d6afbc991d312ebc9d0044d50aca342f52a175",
+      "size": 16052411
     }
   },
   "package": "com.carnext.launcher",
